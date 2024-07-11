@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spice Route - Indian Recipe App</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="assets/images/logo.jfif" alt="Spice Route Logo">
+                <span>Spice Route</span>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#recipes">Recipes</a></li>
+                <li><a href="#add-recipe">Add Recipe</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Discover the Flavors of India</h1>
+                <p>Embark on a culinary journey through authentic Indian recipes</p> <br>
+                <a href="#recipes" class="btn btn-primary">Explore Recipes</a>
+            </div>
+        </section>
+
+        <section id="recipes">
+            <h2>Our Recipes</h2>
+            <div class="recipe-grid">
+                <!-- Recipe cards will be dynamically added here -->
+            </div>
+        </section>
+
+        <section id="add-recipe">
+            <div class="container">
+            <h2>Share Your Recipe</h2>
+            <form id="recipe-form">
+                <input type="text" placeholder="Recipe Name" required>
+                <textarea placeholder="Description" required></textarea>
+                <input type="text" placeholder="Image URL" required>
+                <textarea placeholder="Ingredients (one per line)" required></textarea>
+                <textarea placeholder="Steps (one per line)" required></textarea>
+                <button type="submit" class="btn btn-primary">Submit Recipe</button>
+            </form>
+        </div>
+        </section>
+    
+        <section id="about">
+            <div class="container">
+            <h2>About Spice Route</h2>
+            <p>Spice Route is your passport to the rich and diverse world of Indian cuisine. Our curated collection of authentic recipes brings the flavors of India right to your kitchen. <br>
+                From aromatic curries to delectable desserts, embark on a culinary adventure with us.</p>
+
+            <p>At Spice Route, we believe that food is more than just sustenance; it’s a journey of flavors that brings people together. Our mission is to guide you through the rich tapestry of Indian cuisine, showcasing recipes that embody the essence of traditional cooking with a modern twist. 
+                <br> <br> Each recipe at Spice Route is crafted to highlight the unique spices and ingredients that define the vibrant culinary landscape of India. Whether you're a seasoned chef or a curious beginner, Spice Route is here to inspire your culinary adventures with authentic and delectable dishes.</p>
+
+              <p>Explore the world of spices with Spice Route, where every dish tells a story. From the aromatic curries of the North to the spicy seafood of the South, Spice Route offers a diverse collection of recipes that celebrate the regional diversity of Indian food.
+                <br> <br> Our carefully curated recipes aim to transport you to the bustling streets and serene kitchens of India, providing a taste of its rich culture and heritage. Join us on this flavorful journey and discover how Spice Route can elevate your cooking experience and bring the authentic tastes of India to your table.</p>    
+        </section>
+    </div>
+
+        <section id="contact">
+            <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="assets/images/logo.jfif" alt="Spice Route Logo">
+                <span>Spice Route</span>
+            </div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#recipes">Recipes</a>
+                <a href="#add-recipe">Add Recipe</a>
+                <a href="#about">About Us</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Spice Route. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="recipe-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <img id="modal-image" src="" alt="">
+            <h3>Ingredients:</h3>
+            <ul id="modal-ingredients"></ul>
+            <h3>Steps:</h3>
+            <ol id="modal-steps"></ol>
+        </div>
+    </div>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
